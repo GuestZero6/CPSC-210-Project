@@ -1,0 +1,13 @@
+{"groups": [{
+    "courses": [
+        {
+            "name": "CPSC 213",
+            "studyHours": 5.5
+        },
+        {
+            "name": "Math 220",
+            "studyHours": 2
+        }
+    ],
+    "groupName": "group1"
+}]}

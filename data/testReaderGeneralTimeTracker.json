@@ -1,0 +1,22 @@
+{
+    "groups": [
+        {
+            "groupName": "term1",
+            "courses": [
+                {
+                    "name": "CPSC 210",
+                    "studyHours": 3.5
+                }
+            ]
+        },
+        {
+            "groupName": "term2",
+            "courses": [
+                {
+                    "name": "MATH 200",
+                    "studyHours": 5.0
+                }
+            ]
+        }
+    ]
+}
