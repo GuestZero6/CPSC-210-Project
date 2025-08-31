@@ -175,21 +175,25 @@ public class TimeTrackerApp {
             String courseName = input.nextLine();
             Course course = group.findCourse(courseName);
 
-            if (course != null) {
-                System.out.print("Enter hours to add: ");
-                double hours = Double.parseDouble(input.nextLine());
-
-                if (hours < 0) {
-                    System.out.println("Invalid input. Added hours must not be negative");
-                } else {
-                    course.addHours(hours);
-                    System.out.println(hours + " hours has been added to " + courseName + ".");
-                }
-            } else {
-                System.out.println("Course not found.");
-            }
+            extracted(courseName, course);
         } else {
             System.out.println("Group not found.");
+        }
+    }
+
+    private void extracted(String courseName, Course course) {
+        if (course != null) {
+            System.out.print("Enter hours to add: ");
+            double hours = Double.parseDouble(input.nextLine());
+
+            if (hours < 0) {
+                System.out.println("Invalid input. Added hours must not be negative");
+            } else {
+                course.addHours(hours);
+                System.out.println(hours + " hours has been added to " + courseName + ".");
+            }
+        } else {
+            System.out.println("Course not found.");
         }
     }
 
